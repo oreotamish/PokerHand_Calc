@@ -1,0 +1,9 @@
+REQUIREMENTS:
+install cython
+install eval7
+install tk (tkinter)
+
+EXEC:
+pip install cython
+pip install eval7
+pip install tk

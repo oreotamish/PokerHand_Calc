@@ -206,24 +206,24 @@ def button_9d_is_Clicked():
     the_data.set(var) 
 #------------------
 
-def button_10c_is_Clicked():
+def button_Tc_is_Clicked():
     global var
-    var = var + "10c" + " "
+    var = var + "Tc" + " "
     the_data.set(var) 
 
-def button_10s_is_Clicked():
+def button_Ts_is_Clicked():
     global var
-    var = var + "10s" + " "
+    var = var + "Ts" + " "
     the_data.set(var) 
 
-def button_10h_is_Clicked():
+def button_Th_is_Clicked():
     global var
-    var = var + "10h" + " "
+    var = var + "Th" + " "
     the_data.set(var) 
 
-def button_10d_is_Clicked():
+def button_Td_is_Clicked():
     global var
-    var = var + "10d" + " "
+    var = var + "Td" + " "
     the_data.set(var) 
 #-----------------------------
 def button_Jc_is_Clicked():
@@ -305,7 +305,8 @@ def res():
     my_tuple = tuple(var.split())
     hand = [eval7.Card(s) for s in my_tuple]
     eval7.evaluate(hand)
-    print(eval7.handtype(eval7.evaluate(hand)))
+    x = tuple(eval7.handtype(eval7.evaluate(hand)))
+    the_data.set(x)
 
 # creating an object of the Tk() class  
 guiWindow = tkinter.Tk()  
@@ -726,45 +727,45 @@ button9d.pack(side = LEFT, expand = True, fill = "both")
 
 #--------------------------
 
-button10c = Button(
+buttonTc = Button(
     frameThree,  
     text = "10c",  
     font = ("Cambria", 22),  
     relief = GROOVE,  
     border = 0,  
-    command = button_10c_is_Clicked  
+    command = button_Tc_is_Clicked
 )
-button10c.pack(side = LEFT, expand = True, fill = "both")
+buttonTc.pack(side = LEFT, expand = True, fill = "both")
 
-button10s = Button(
+buttonTs = Button(
     frameThree,   
     text = "10s",  
     font = ("Cambria", 22),  
     relief = GROOVE,  
     border = 0,  
-    command = button_10s_is_Clicked  
+    command = button_Ts_is_Clicked
 )
-button10s.pack(side = LEFT, expand = True, fill = "both")
+buttonTs.pack(side = LEFT, expand = True, fill = "both")
 
-button10h = Button(
+buttonTh = Button(
     frameThree,   
     text = "10h",  
     font = ("Cambria", 22),  
     relief = GROOVE,  
     border = 0,  
-    command = button_10h_is_Clicked  
+    command = button_Th_is_Clicked
 )
-button10h.pack(side = LEFT, expand = True, fill = "both")
+buttonTh.pack(side = LEFT, expand = True, fill = "both")
 
-button10d = Button(
+buttonTd = Button(
     frameThree,  
     text = "10d",  
     font = ("Cambria", 22),  
     relief = GROOVE,  
     border = 0,  
-    command = button_10d_is_Clicked  
+    command = button_Td_is_Clicked
 )
-button10d.pack(side = LEFT, expand = True, fill = "both")
+buttonTd.pack(side = LEFT, expand = True, fill = "both")
 
 #-----------------
 
